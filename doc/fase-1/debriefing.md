@@ -3,6 +3,7 @@
 Schrijf in dit document de debriefing voor jouw MyBand project
 
 * Wat is volgens jou de opdracht?
+  - een fanpage maken over een onderwerp dat jij zelf interessant vind
 * Wat wordt er gevraagd?
 * Welke globale planning is er?
 * Wat zijn je eerste ideeen voor jouw project?
