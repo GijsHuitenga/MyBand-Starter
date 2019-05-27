@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #333;
+	margin: 0;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	padding: .5em;
+	width: 100%;
+	height: 80px;
+	background-color: #F2F2F2;
+	z-index: 1;
+}
+
+.logo {
+	padding-left: 1em;
+}
+
+header a {
+	color: #333;
+	text-decoration: none;
+	margin: 1.5em;
+	padding: .4em;
+	border-radius: .7em;
+	transition: .2s;
+}
+
+header a:hover {
+	color: #333;
+	font-weight: bolder;
+	text-decoration: none;
+	margin: 1.5em;
+	padding: .4em;
+	background-color: #E0E0E0;
+	border-radius: .7em;
+}
+
+header nav {
+	position: absolute;
+	top: 2.2em;
+	right: 3em;
+}
+
+header nav a {
+	color: #333;
+	font-size: 20px;
+	text-decoration: none;
+	margin-right: 1.5em;
+	padding: .6em;
+	border-radius: .7em;
+	transition: .2s;
+}
+
+header nav a:hover {
+	color: #333;
+	font-size: 20px;
+	font-weight: bolder;
+	text-decoration: none;
+	margin-right: 1.5em;
+	padding: .6em;
+	background-color: #E0E0E0;
+	border-radius: .7em;
+}
+
+div.top-image img {
+	width: 100vw;
+	height: auto;
+}
+
+div.top-image-text {
+	color: #333333;
+	position: absolute;
+	top: 15em;
+	left: 2em;
+	font-size: 20px;
+
+}
+
+div.about-text {
+	width: 75%;
+	margin: 0 auto;
+}
+
+div.f1-calender {
+	padding-bottom: 5em;
+}
+
+div.f1-calender h2 {
+	width: 75%;
+	margin: 0 auto;
+	padding-bottom: 1em;
+}
+
+div.f1-calender table {
+	border-collapse: collapse;
+	width: 75%;
+	margin: 0 auto;
+}
+
+div.f1-calender table td, div.f1-calender table th {
+	border: 1px solid #DDD;
+	text-align: left;
+	padding: 8px;
+}
+
+div.f1-calender table tr:nth-child(even) {
+	background-color: #DDD;
+}
+
+div.f1-news {
+	width: 75%;
+	margin: 0 auto;
+}
+
+div.f1-news section {
+	border: 3px solid #EFEFEF;
+	border-radius: 25px;
+	padding-right: 2em;
+	padding-left: 2em;
+	padding-bottom: 2em;
+	padding-top: 2em;
+	margin-bottom: 2em;
+}
+
+div.f1-news img {
+	width: 100%;
+	border-radius: 25px;
+}
+
+div.f1-news a {
+	font-size: 20px;
+	color: #949494;
+	text-decoration: none;
+}
+
+div.f1-news a:hover {
+	color: #949494;
+	text-decoration: underline;
+}
+
+div.school-proj {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 2em;
+}
+
+footer {
+	padding: 1em;
+	width: 100%;
+	height: 150px;
+	background-color: #333333;
+	color: #949494;
+	position: relative;
+	left: 0;
+	bottom: 0;
+}
+
+footer .footer-content {
+	padding: 1em;
+	width: 30%;
+	margin: 0 auto;
+}
+
+footer .left-content {
+	float: left;
+}
+
+footer .left-content ul li {
+	list-style-type: none;
+}
+
+#vert-line {
+	border-right: 1px solid #949494;
+	height: 120px;
+	position: absolute;
+	left: 53em; 
+}
+
+footer .right-content {
+	float: right;
+}
+
+footer a {
+	color: #949494;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #949494;
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 1130px) {
+	div.top-image-text {
+		color: #333333;
+		position: relative;
+		top: 0;
+		left: 6em;
+		font-size: 20px;
+	}
+}
