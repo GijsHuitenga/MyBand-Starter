@@ -1,6 +1,7 @@
-## Titel van jouw website
-www.mijnliveomgeving.com is een website van (..jouw naam..) waar gebruikers kunnen (..nut gebruiker..) bedoeld voor (..doelgroep..)
-De website is enigszins te vergelijken met (..concurrentie1..) of (..concurrentie2..) maar toch anders omdat (..uniek aspect..)
+## F1-Local
+http://27202.hosts2.ma-cloud.nl/bewijzenmap/periode1.4/PROJ/public/index.php
+is een website van Gijs Huitenga waar gebruikers het laatste F1 nieuws kunnen zien. bedoeld voor F1 fans.
+De website is enigszins te vergelijken met www.f1.com of www.autoweek.nl maar toch anders omdat mijn website focust op bepaald meerdere onderwerpen om F1 heen.
 
 ### Uniek aan dit concept is: 
  * eerste u.s.p. (vul hier in, waarin jouw site anders is dan alle anderen)
@@ -25,9 +26,9 @@ Deze fase duurt 2 weken
 | ------ |  ------ | ------ | ------ |
 | README                                            | DONE | [README.md]  (dit document)          | MarkDown |
 | B1-K1-W1 Debriefing                               | DONE | [Debriefing]                         | Markdown |
-| B1-K1-W2 Planning                                 | TODO | [Planning]                           | Markdown |
-| B1-K1-W2 Plan van aanpak                          | TODO | [Plan van Aanpak]                    | Markdown of Word/RTF|
-| B1-K1-W2 User stories                             | TODO | [User Stories]                       | Markdown of Word/RTF|
+| B1-K1-W2 Planning                                 | DONE | [Planning]                           | Markdown |
+| B1-K1-W2 Plan van aanpak                          | DONE | [Plan van Aanpak]                    | Markdown of Word/RTF|
+| B1-K1-W2 User stories                             | DONE | [User Stories]                       | Markdown of Word/RTF|
 | B1-K1-W2 Functioneel ontwerp                      | TODO | [FO]                                 | Markdown of Word/RTF|
 | B1-K1-W2 Flowchart                                | TODO | [Flow]                               | Afbeelding(en) of geexporteerd uit http://draw.io |
 | B1-K1-W2 Urenschatting                            | TODO | [Urenschatting]                      | Markdown |
@@ -50,7 +51,7 @@ Deze fase duurt 2 weken
 
 | Milestone  | Status | Link |
 | ------ |  ------ | ------ |
-| B1-K1-W2 Product backlog                          | TODO | [Backlog]                            | Link naar Trello met Sprint planningen | |
+| B1-K1-W2 Product backlog                          | DONE | [Backlog]                            | Link naar Trello met Sprint planningen | |
 | B1-K1-W2 Sprint planning 1, 2 en 3                | TODO | [Trello] / [Trello Tips]             | Link naar Trello met Sprint planningen | |
 | B1-K1-W3 Technisch Ontwerp                        | TODO | [TO]                                 | Markdown of Word/RTF| |
 
@@ -63,7 +64,7 @@ Deze fase duurt 2 weken
 
 | Milestone  | Status | Link |
 | ------ |  ------ | ------ |
-| B1-K3-W2 Link naar de live omgeving                        |  TODO |  <https://mijnliveomgeving.com> |
+| B1-K3-W2 Link naar de live omgeving                        |  DONE |  <http://27202.hosts2.ma-cloud.nl/bewijzenmap/periode1.4/PROJ/public/index.php> |
 | B1-K3-W2 Gebruikersdocumentatie / instructie               |  TODO |  [Gebruikers documentatie] |
 | B1-K3-W3 Evaluatie                                         |  TODO |  [Evaluatie] |
 
