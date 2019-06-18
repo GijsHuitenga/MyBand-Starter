@@ -1,34 +1,15 @@
 
 <?php
 
-/**
- * Dit is de Front controller
- * ALLE requests die naar de webserver worden gedaan worden via de .htaccess naar dit script gestuurd.
- * Zo voorkom je dat je heel veel PHP bestanden hebt met dubbele code en logica.
- *
- * Alle urls hebben de volgende structuur: http://localhost/<controller>/<actie>/<optionele parameters>
- *
- * Bijv: http://localhost/page/show/about-us
- * (roept de show functie aan in de page controller met de parameter 'about-us')
- *
- * controller: page
- * actie: show
- * parameter: about-us
- *
- * De Front Controller (dit bestand) doorloopt elke keer de volgende procedure:
- *
- * 1. Inspecteert de URL die wordt opgevraagd
- * 2. Zoekt op in een "routing" tabel of hij deze URL of dit URL patroon kent
- * 3. Zo niet, dan is het een 404 oagina, want de website kent deze url niet
- * 4. Als de url wel wordt herkend en er een "route" is naar de juiste code dan:
- *  A. Wordt de juiste controller actie aangeroepen
- *  B. De controller krijgt alle gegevens door (de url, $_GET, $_POST, $_FILES etc)
- *  C. De controller haalt eventueel gegevens op via de Model laag (database queries e.d.)
- *  D. De controller geeft de gegevens aan de juiste view
- *  E. De view toont de gegevens op de juiste manier (met behulp van een foreach, if, switch e.d.)
- *  F. De complete view (met data) wordt door de controller teruggestuurd naar de gebruiker (dit is de Response)
- *
- */
+require '../private/functions.php';
+
+$connect = dbConnect();
+
+$sql1 		= 'SELECT * FROM `about`';
+$statement1 = $connect->query($sql1);
+
+$sql3 		= 'SELECT * FROM `news`';
+$statement3 = $connect->query($sql3);
 
 ?>
 
@@ -45,8 +26,9 @@
 	</div>
 
 	<div class="about-text" id="about">
-		<h2>About us</h2>
-		<p>We made this website to keep our fellow F1 fans up to date with everything that is happening in and around F1. This website is made for F1 fans, by F1 fans.</p>
+		<?php foreach ($statement1 as $about) ?>
+		<h2><?php echo $about['title'] ?></h2>
+		<p><?php echo $about['content'] ?></p>
 	</div>
 
 	<div class="f1-calender" id="calender">
@@ -108,43 +90,15 @@
 	<div class="f1-news" id="news">
 		<h1>F1 News</h1>
 
-		<section>
-			<img src="images/fer-improv.jpg">
-			<h2>Ferrari not expecting major improvement anytime soon - Binotto</h2>
-			<p><strong>After their impressive showing in pre-season testing, big things were expected of Ferrari this year. But six races in, a single second place is their best result to date. That has to change soon, though, right? Unlikely – at least according to Team Principal Mattia Binotto.</strong></p>
-			<p>Ferrari’s SF90 has displayed excellent straight-line speed, with its power unit generally considered to be the best on the grid. However, in the handling, balance and tyre departments the Italian team have trailed their Mercedes – and often Red Bull – rivals.</p>
-			<small>3 June, 2019</small><br>
-			<a href="https://www.formula1.com/en/latest/article.ferrari-not-expecting-major-improvement-anytime-soon-binotto.2WK6RcOUFDNYxiTxqfodxu.html" target="_blank">Read more at www.f1.com</a>
-		</section>
-
-		<section>
-			<img src="images/two-merc.jpg">
-			<h2>Hamilton anticipating Mercedes engine upgrade in Canada</h2>
-			<p><strong>Mercedes have been the class of the field in 2019, winning all six races so far and getting both cars on the podium on each occasion. And in an attempt to maintain and extend that advantage, they could well introduce their first upgraded engine of the season in Canada…</strong></p>
-			<p>Lewis Hamilton had to work hard for victory in Monaco – his third triumph on the streets of the Principality – after Mercedes opted to fit him with medium tyres for the majority of the race, which ultimately turned out to be the wrong compound to be on.</p>
-			<small>3 June, 2019</small><br>
-			<a href="https://www.formula1.com/en/latest/article.hamilton-anticipating-mercedes-engine-upgrade-in-canada.1EU9SS2LZ5VoWczs9qY3tv.html" target="_blank">Read more at www.f1.com</a>
-		</section>
-
-		<section>
-			<img src="images/zand-circuit.jpg">
-			<h2>Dutch Grand Prix to return at Zandvoort from 2020</h2>
-			<p><strong>Formula 1 is delighted to announce that the Dutch Grand Prix returns to the FIA Formula 1 World Championship from 2020. An agreement has recently been signed between Formula 1 and Dutch Grand Prix – a partnership formed by SportVibes, TIG Sports and the Circuit Zandvoort – and will run for at least three years.</strong></p>
-			<p>Furthermore, Heineken, one of the longstanding Global Partners of Formula 1, will be the Title Sponsor of the event.</p>
-			<p>Situated not far from the vibrant city of Amsterdam, Zandvoort is a major beach resort in the Netherlands, known for its long beach bordered by magnificent coastal dunes separating the North Sea from the track. The Circuit of Zandvoort has a long history as a Formula 1 venue, and over the coming months, the facility will be rebuilt with help from Zandvoort town council and several other partners. The track and the infrastucture will be modified in order to meet the standards laid out by the FIA in order to host a Formula 1 World Championship event.</p>
-			<small>14 May, 2019</small><br>
-			<a href="https://www.formula1.com/en/latest/article.dutch-grand-prix-to-return-at-zandvoort-from-2020.1OTLRqLZB6mXdD1VPyHiNx.html" target="_blank">Read more at www.f1.com</a>
-		</section>
-
-		<section>
-			<img src="images/spain-win.jpg">
-			<h2>The Winners and Losers of the Spanish Grand Prix</h2>
-			<p>For one team, the trophy cabinet needed reorganising to find yet more space, while for others it was back to the drawing board after a testing weekend at the Circuit de Barcelona-Catalunya. We pick out the winners and losers of the Spanish Grand Prix...</p>
-			<p>It was not the cleanest weekend for Lewis Hamilton. In fact, it has not been the cleanest season. He was uncomfortable in the car at Barcelona, and struggled with the tyres in qualifying once again, which meant he was beaten to pole by team mate Valtteri Bottas for the third time in a row.</p>
-			<small>13 May, 2019</small><br>
-			<a href="https://www.formula1.com/en/latest/article.the-winners-and-losers-of-the-spanish-grand-prix.2bcK8oeFZWe1C3dE5qxHhB.html" target="_blank">Read more at www.f1.com</a>
-		</section>
-
+		<?php foreach ($statement3 as $news): ?>
+			<section>
+				<img src="<?php echo $news['image'] ?>">
+				<h2><?php echo $news['title'] ?></h2>
+				<p><?php echo $news['content'] ?></p>
+				<small><?php echo $news['date'] ?></small><br>
+				<a href="<?php echo $news['link'] ?>" target="_blank">Read more at www.f1.com</a>
+			</section>
+		<?php endforeach; ?>
 	</div>
 
 	<div class="f1-history" id="history">
@@ -154,8 +108,10 @@
 	</div>
 
 	<div class="contact-link" id="contact">
-		<h2>Contact</h2>
-		<p>This is a school project. If you would like to contact me, you can send an email to 27202@ma-web.nl.</p>
+		<form action="mailto:27202@ma-web.nl" method="post" enctype="text/plain">
+			<input type="submit" name="contact" value="Contact">
+			<p>You can contact us by clicking on the contact button.</p>
+		</form>
 	</div>
 
 </main>
