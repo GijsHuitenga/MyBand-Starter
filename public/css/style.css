@@ -21,8 +21,32 @@ header {
 	z-index: 1;
 }
 
-.logo {
+header h1.logo {
 	padding-left: 1em;
+}
+
+header form input[type=text] {
+	position: absolute;
+	top: 1.4em;
+	left: 21em;
+	font-size: 20px;
+	padding: .3em;
+}
+
+header form button {
+	position: absolute;
+	top: 1.4em;
+	left: 31.2em;
+	font-size: 20px;
+	padding: .4em;
+	background-color: #DDD;
+	transition: .2s;
+	border: none;
+	cursor: pointer;
+}
+
+header form button:hover {
+	background-color: #CCC;
 }
 
 header a {
@@ -136,6 +160,10 @@ div.f1-news img {
 	border-radius: 25px;
 }
 
+div.f1-news small {
+	color: #949494;
+}
+
 div.f1-news a {
 	font-size: 20px;
 	color: #949494;
@@ -147,10 +175,33 @@ div.f1-news a:hover {
 	text-decoration: underline;
 }
 
-div.school-proj {
+div.f1-history {
+	width: 75%;
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+
+div.f1-history p {
+	font-size: 18px;
+}
+
+div.f1-history p.text1 {
+	width: 50%;
+}
+
+div.f1-history img.img1 {
+	width: 40%;
+	position: relative;
+	left: 43em;
+	top: -25em;
+}
+
+div.contact-link {
+	width: 75%;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 24px;
+	margin-top: 2em;
 	margin-bottom: 2em;
 }
 

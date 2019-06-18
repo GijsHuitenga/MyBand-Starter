@@ -17,7 +17,6 @@
 				<div class="right-content">
 					<p>&copy; Gijs Huitenga, 2019</p>
 					<a href="http://gijs-huitenga.nl/index.html" target="_blank">www.gijs-huitenga.nl</a><br><br>
-					<a href="contact.php">Contact</a>
 				</div>
 
 			</div>
