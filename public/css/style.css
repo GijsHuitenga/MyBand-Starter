@@ -205,6 +205,22 @@ div.contact-link {
 	margin-bottom: 2em;
 }
 
+div form input {
+	padding: .4em;
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	border: none;
+	border-radius: .7em;
+	background-color: #FFFFFF;
+	transition: .2s;
+	cursor: pointer;
+}
+
+div form input:hover {
+	font-weight: bold;
+	background-color: #F2F2F2;
+}
+
 footer {
 	padding: 1em;
 	width: 100%;
