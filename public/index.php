@@ -8,8 +8,14 @@ $connect = dbConnect();
 $sql1 		= 'SELECT * FROM `about`';
 $statement1 = $connect->query($sql1);
 
+$sql2		= 'SELECT * FROM `calender`';
+$statement2 = $connect->query($sql2);
+
 $sql3 		= 'SELECT * FROM `news`';
 $statement3 = $connect->query($sql3);
+
+$sql4		= 'SELECT * FROM `history`';
+$statement4 = $connect->query($sql4);
 
 ?>
 
@@ -39,46 +45,13 @@ $statement3 = $connect->query($sql3);
 				<th>Event</th>
 				<th>Location</th>
 			</tr>
-			<tr>
-				<td>23 - 26 May / 15:10 (tracktime)</td>
-				<td>Formula 1 Grand Prix de Monaco 2019</td>
-				<td>Monte Carlo, Cricuit de Monaco</td>
-			</tr>
-			<tr>
-				<td>07 - 09 Jun / 14:10 (tracktime)</td>
-				<td>Formula 1 Pirelli Grand Prix du Canada 2019</td>
-				<td>Canada, Montréal Cricuit Gilles-Villeneuve</td>
-			</tr>
-			<tr>
-				<td>21 - 23 Jun / 15:10 (tracktime)</td>
-				<td>Formula 1 Grand Prix de France 2019</td>
-				<td>France, Le Castellet Circuit Paul Ricard</td>
-			</tr>
-			<tr>
-				<td>28 - 30 Jun / 15:10 (tracktime)</td>
-				<td>Formula 1 Grand Prix von Austria 2019</td>
-				<td>Austria, Spielberg Red Bull Ring</td>
-			</tr>
-			<tr>
-				<td>12 - 14 Jul / 14:10 (tracktime)</td>
-				<td>Formula 1 Rolex British Grand Prix 2019</td>
-				<td>Britain, Silverstone Circuit</td>
-			</tr>
-			<tr>
-				<td>26 - 28 Jul / 15:10 (tracktime)</td>
-				<td>Formula 1 Mercedes-Benz Grand Prix von Germany 2019</td>
-				<td>Germany, Hockenheim Hockenheimring</td>
-			</tr>
-			<tr>
-				<td>02 - 04 Aug / 15:10 (tracktime)</td>
-				<td>Formula 1 Rolex Grand Prix Hungary 2019</td>
-				<td>Hungary, Budapest Hungaroring</td>
-			</tr>
-			<tr>
-				<td>30 Aug - 01 Sep / 15:10 (tracktime)</td>
-				<td>Formula 1 Johnnie Walker Grand Prix Belgium 2019</td>
-				<td>Belgium, Spa-Francorchamps Circuit de Spa-Francorchamps</td>
-			</tr>
+			<?php foreach ($statement2 as $calender): ?>
+				<tr>
+					<td><?php echo $calender['date'] ?></td>
+					<td><?php echo $calender['event'] ?></td>
+					<td><?php echo $calender['location'] ?></td>
+				</tr>
+			<?php endforeach; ?>
 			<tr>
 				<td>. . .</td>
 				<td>. . .</td>
@@ -89,6 +62,11 @@ $statement3 = $connect->query($sql3);
 
 	<div class="f1-news" id="news">
 		<h1>F1 News</h1>
+
+		<form class="news-search-form" action="" method="">
+			<p>Search through F1 News</p>
+			<input class="search-news" type="search" name="search" placeholder="Search F1 News...">
+		</form>
 
 		<?php foreach ($statement3 as $news): ?>
 			<section>
@@ -102,9 +80,10 @@ $statement3 = $connect->query($sql3);
 	</div>
 
 	<div class="f1-history" id="history">
-		<h2>F1 History</h2>
-		<p class="text1">The Formula One series originated with the European Championship of Grand Prix motor racing (for pre-1947 history) of the 1920s and 1930s. The formula is a set of rules that all participants' cars must meet. Formula One was a new formula agreed upon after World War II during 1946, with the first non-championship races being held that year. The first one, the first Formula 1 race ever, was the Turin Grand Prix. A number of Grand Prix racing organisations had laid out rules for a world championship before the war, but due to the suspension of racing during the conflict, the World Drivers' Championship was not formalised until 1947. The first world championship race was held at Silverstone, United Kingdom in 1950. A championship for constructors followed in 1958. National championships existed in South Africa and the UK in the 1960s and 1970s. Non-championship Formula One events were held for many years, but due to the increasing cost of competition, the last of these occurred in 1983.[9] On 26 November 2017, Formula One unveiled its new logo, following the 2017 season finale in Abu Dhabi during the Abu Dhabi Grand Prix at Yas Marina Circuit. The new logo replaced F1's iconic 'flying one', which had been the sport's trademark since 1993.</p>
-		<img class="img1" src="images/stir-lotus.jpg">
+		<?php foreach ($statement4 as $history) ?>
+		<h2><?php echo $history['title'] ?></h2>
+		<p class="text1"><?php echo $history['p1'] ?></p>
+		<img class="img1" src="<?php echo $history['image'] ?>">
 	</div>
 
 	<div class="contact-link" id="contact">
