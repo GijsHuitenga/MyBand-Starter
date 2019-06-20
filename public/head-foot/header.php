@@ -17,10 +17,6 @@
 
 		<header id="top">
 			<h1 class="logo"><a href="#top">F1-LOCAL</a></h1>
-			<form>
-				<input type="text" name="search" placeholder="Search news...">
-				<button type="submit"><i class="fa fa-search"></i></button>
-			</form>
 			<nav>
 				<a href="#about">About Us</a>
 				<a href="#calender">F1 Agenda</a>

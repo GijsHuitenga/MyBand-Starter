@@ -17,6 +17,9 @@ $statement3 = $connect->query($sql3);
 $sql4		= 'SELECT * FROM `history`';
 $statement4 = $connect->query($sql4);
 
+$sql5		= 'SELECT * FROM `history2`';
+$statement5 = $connect->query($sql5);
+
 ?>
 
 <?php include 'head-foot/header.php' ?>
@@ -52,11 +55,6 @@ $statement4 = $connect->query($sql4);
 					<td><?php echo $calender['location'] ?></td>
 				</tr>
 			<?php endforeach; ?>
-			<tr>
-				<td>. . .</td>
-				<td>. . .</td>
-				<td>. . .</td>
-			</tr>
 		</table>
 	</div>
 
@@ -66,6 +64,7 @@ $statement4 = $connect->query($sql4);
 		<form class="news-search-form" action="" method="">
 			<p>Search through F1 News</p>
 			<input class="search-news" type="search" name="search" placeholder="Search F1 News...">
+			<button class="search-news-button"><i class="fa fa-search"></i></button>
 		</form>
 
 		<?php foreach ($statement3 as $news): ?>
@@ -80,14 +79,18 @@ $statement4 = $connect->query($sql4);
 	</div>
 
 	<div class="f1-history" id="history">
-		<?php foreach ($statement4 as $history) ?>
-		<h2><?php echo $history['title'] ?></h2>
-		<p class="text1"><?php echo $history['p1'] ?></p>
-		<img class="img1" src="<?php echo $history['image'] ?>">
+		<?php foreach ($statement4 as $history1) ?>
+			<h2><?php echo $history1['title'] ?></h2>
+			<p class="text1"><?php echo $history1['content'] ?></p>
+			<img class="img1" src="<?php echo $history1['image'] ?>" alt="Stirling Moss' Lotus 18">
+		<?php foreach ($statement5 as $history2) ?>
+			<h2 class="title2"><?php echo $history2['title'] ?></h2>
+			<p class="text2"><?php echo $history2['content'] ?></p>
+			<img class="img2" src="<?php echo $history2['image'] ?>" alt="Juan M. Fangio's Alfa Romeo 159">
 	</div>
 
 	<div class="contact-link" id="contact">
-		<form action="mailto:27202@ma-web.nl" method="post" enctype="text/plain">
+		<form class="contact-form" action="mailto:27202@ma-web.nl" method="post" enctype="text/plain">
 			<input type="submit" name="contact" value="Contact">
 			<p>You can contact us by clicking on the contact button.</p>
 		</form>

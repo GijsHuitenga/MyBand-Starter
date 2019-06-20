@@ -15,7 +15,7 @@
 				<div id="vert-line"></div>
 
 				<div class="right-content">
-					<p>&copy; Gijs Huitenga, 2019</p>
+					<p>&copy; 2019 | Gijs Huitenga</p>
 					<a href="http://gijs-huitenga.nl/index.html" target="_blank">www.gijs-huitenga.nl</a><br><br>
 				</div>
 

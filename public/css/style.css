@@ -25,30 +25,6 @@ header h1.logo {
 	padding-left: 1em;
 }
 
-header form input[type=text] {
-	position: absolute;
-	top: 1.4em;
-	left: 21em;
-	font-size: 20px;
-	padding: .3em;
-}
-
-header form button {
-	position: absolute;
-	top: 1.4em;
-	left: 31.2em;
-	font-size: 20px;
-	padding: .4em;
-	background-color: #DDD;
-	transition: .2s;
-	border: none;
-	cursor: pointer;
-}
-
-header form button:hover {
-	background-color: #CCC;
-}
-
 header a {
 	color: #333;
 	text-decoration: none;
@@ -145,6 +121,35 @@ div.f1-news {
 	margin: 0 auto;
 }
 
+div.f1-news form.news-search-form {
+
+}
+
+div.f1-news form.news-search-form input.search-news {
+	border: none;
+	border-bottom: 3px solid #EFEFEF;
+	border-radius: .2em;
+	font-size: 20px;
+	margin-bottom: 1.5em;
+	width: 13em;
+	cursor: text;
+}
+
+div.f1-news form.news-search-form button.search-news-button {
+	color: #DBDBDB;
+	border: none;
+	border-radius: .2em;
+	font-size: 20px;
+	transition: .2s;
+	padding: .5em;
+	cursor: pointer;
+}
+
+div.f1-news form.news-search-form button.search-news-button:hover {
+	background-color: #E0E0E0;
+	color: #A0A0A0;
+}
+
 div.f1-news section {
 	border: 3px solid #EFEFEF;
 	border-radius: 25px;
@@ -196,6 +201,25 @@ div.f1-history img.img1 {
 	top: -25em;
 }
 
+div.f1-history h2.title2 {
+	position: relative;
+	top: -15em;
+	right: -23.5em;
+}
+
+div.f1-history p.text2 {
+	width: 55%;
+	float: right;
+	position: relative;
+	top: -20em;
+}
+
+div.f1-history img.img2 {
+	width: 40%;
+	position: relative;
+	top: -25em;
+}
+
 div.contact-link {
 	width: 75%;
 	margin: 0 auto;
@@ -203,6 +227,11 @@ div.contact-link {
 	font-size: 24px;
 	margin-top: 2em;
 	margin-bottom: 2em;
+}
+
+div.contact-link form.contact-form {
+	position: relative;
+	top: -10em;
 }
 
 div form input {
