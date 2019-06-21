@@ -3,13 +3,13 @@ http://27202.hosts2.ma-cloud.nl/bewijzenmap/periode1.4/PROJ/public/index.php
 is een website van Gijs Huitenga waar gebruikers het laatste F1 nieuws kunnen zien. bedoeld voor F1 fans.
 De website is enigszins te vergelijken met www.f1.com of www.autoweek.nl maar toch anders omdat mijn website focust op bepaald meerdere onderwerpen om F1 heen.
 
-##### Gebruiksaanwijzing:
+#### Gebruiksaanwijzing:
 Hier staat hoe u de website zou moeten gebruiken.
 
  - In de navigatie kunt u klikken op welk deel u van de website wilt zijn
  - Boven de table in de sectie F1 Calender kunt u de races op zoeken door middel van de naam in te typen.
 
-##### Fase 1: Opdracht vaststellen / Projectplan en planning / Ontwerpen & voorbereiden 
+#### Fase 1: Opdracht vaststellen / Projectplan en planning / Ontwerpen & voorbereiden 
 Deze fase duurt 2 weken
 
 | Milestone  | Status | Link | Type Document of cloudservice |
