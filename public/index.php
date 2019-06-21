@@ -42,7 +42,8 @@ $statement5 = $connect->query($sql5);
 
 	<div class="f1-calender" id="calender">
 		<h2>F1 calender</h2>
-		<table>
+		<input type="text" id="table-search" onkeyup="searchTable()" placeholder="Search for races..." title="Type in a name" name="table-search">
+		<table id="calender-table">
 			<tr>
 				<th>Date/time</th>
 				<th>Event</th>
@@ -60,12 +61,6 @@ $statement5 = $connect->query($sql5);
 
 	<div class="f1-news" id="news">
 		<h1>F1 News</h1>
-
-		<form class="news-search-form" action="" method="">
-			<p>Search through F1 News</p>
-			<input class="search-news" type="search" name="search" placeholder="Search F1 News...">
-			<button class="search-news-button"><i class="fa fa-search"></i></button>
-		</form>
 
 		<?php foreach ($statement3 as $news): ?>
 			<section>

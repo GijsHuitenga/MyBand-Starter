@@ -88,16 +88,37 @@ div.top-image-text {
 div.about-text {
 	width: 75%;
 	margin: 0 auto;
+	margin-top: 3em;
 }
 
 div.f1-calender {
 	padding-bottom: 5em;
+	margin-top: 3em;
 }
 
 div.f1-calender h2 {
 	width: 75%;
 	margin: 0 auto;
 	padding-bottom: 1em;
+}
+
+div.f1-calender input#table-search {
+	font-family: 'Raleway', sans-serif;
+	padding: .4em;
+	border: none;
+	border-bottom: 3px solid #EFEFEF;
+	border-radius: .2em;
+	font-size: 20px;
+	margin-bottom: 1.5em;
+	margin-left: 10.5em;
+	width: 13em;
+	cursor: text;
+	transition: .2s;
+}
+
+div.f1-calender input#table-search:hover {
+	background-color: #EFEFEF;
+	font-weight: bold;
 }
 
 div.f1-calender table {
@@ -119,10 +140,6 @@ div.f1-calender table tr:nth-child(even) {
 div.f1-news {
 	width: 75%;
 	margin: 0 auto;
-}
-
-div.f1-news form.news-search-form {
-
 }
 
 div.f1-news form.news-search-form input.search-news {
