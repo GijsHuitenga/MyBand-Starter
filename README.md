@@ -3,23 +3,13 @@ http://27202.hosts2.ma-cloud.nl/bewijzenmap/periode1.4/PROJ/public/index.php
 is een website van Gijs Huitenga waar gebruikers het laatste F1 nieuws kunnen zien. bedoeld voor F1 fans.
 De website is enigszins te vergelijken met www.f1.com of www.autoweek.nl maar toch anders omdat mijn website focust op bepaald meerdere onderwerpen om F1 heen.
 
-### Uniek aan dit concept is: 
- * eerste u.s.p. (vul hier in, waarin jouw site anders is dan alle anderen)
- * tweede u.s.p. (vul hier in, waar jouw site door gaat opvallen, wat zal iedereen onthouden van jouw site?)
+##### Gebruiksaanwijzing:
+Hier staat hoe u de website zou moeten gebruiken.
 
----
-#### Milestones 
-
-In het [Kwalificatiedossier] voor de opleiding Mediadeveloper staan een aantal *kerntaken* en *werkprocessen*.
-In onderstaande tabel zie je per kerntaak en werkproces welke werkzaamheden en documenten hier bij horen.
-Elke opgeleverd product of document is een *milestone*, een belangrijke stap die nodig is bij de ontwikkeling van jouw MyBand project.
-
-![kerntaken en werkprocessen](doc/images/kd_taken_processen.png)
-
-Je wordt beoordeeld op de aanwezigheid en inhoud van onderstaande documenten.
+ - In de navigatie kunt u klikken op welk deel u van de website wilt zijn
+ - Boven de table in de sectie F1 Calender kunt u de races op zoeken door middel van de naam in te typen.
 
 ##### Fase 1: Opdracht vaststellen / Projectplan en planning / Ontwerpen & voorbereiden 
-
 Deze fase duurt 2 weken
 
 | Milestone  | Status | Link | Type Document of cloudservice |
