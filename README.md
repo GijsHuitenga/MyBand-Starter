@@ -1,5 +1,5 @@
 ## F1-Local
-http://27202.hosts2.ma-cloud.nl/bewijzenmap/periode1.4/PROJ/public/index.php
+http://27202.hosts2.ma-cloud.nl/bewijzenmap/jaar1/periode1.4/PROJ/public/index.php
 is een website van Gijs Huitenga waar gebruikers het laatste F1 nieuws kunnen zien. bedoeld voor F1 fans.
 De website is enigszins te vergelijken met www.f1.com of www.autoweek.nl maar toch anders omdat mijn website focust op bepaald meerdere onderwerpen om F1 heen.
 
